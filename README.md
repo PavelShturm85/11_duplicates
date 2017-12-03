@@ -11,9 +11,11 @@ Example of script launch on Linux, Python 3.5:
 ```bash
 $ python3 duplicates.py
 Enter the directory: /home/pavel/test
-Duplicate files: /home/pavel/test/3, /home/pavel/test/test2/3, /home/pavel/test/test2/test3/3
-Duplicate files: /home/pavel/test/2, /home/pavel/test/test2/2
-Duplicate files: /home/pavel/test/1, /home/pavel/test/test2/test3/1
+Duplicate files:2 	 /home/pavel/test/2, /home/pavel/test/test2/2
+Duplicate files:6 	 /home/pavel/test/6, /home/pavel/test/test2/test3/6
+Duplicate files:1 	 /home/pavel/test/1, /home/pavel/test/test2/test3/1
+Duplicate files:3 	 /home/pavel/test/3, /home/pavel/test/test2/3, /home/pavel/test/test2/test3/3
+
 
 ```
 # Project Goals
