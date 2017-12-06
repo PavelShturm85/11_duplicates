@@ -15,17 +15,16 @@ def get_all_files(folder):
 
 
 def get_duplicates(all_files):
-    duplicates = defaultdict(list)
-    for key in all_files:
-        if len(all_files.get(key)) > 1:
-            duplicates[key].append(all_files[key])
-    return duplicates
+    return {key: all_files[key] for key in all_files
+            if len(all_files.get(key)) > 1}
 
 
 def print_dublicates(duplicates):
     for key in duplicates:
+        file_name = key[1]
+        file_path = duplicates[key]
         print('Duplicate files:{} \t {}'.format(
-            key[1], ', '.join(duplicates[key][0])))
+            file_name, ', '.join(file_path)))
 
 
 if __name__ == '__main__':
